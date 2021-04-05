@@ -61,6 +61,25 @@
   text-decoration: none;
   cursor: pointer;
 }
+.swapbtn{
+  width: auto;
+  height: auto;
+  margin-right: 6%;
+}
+.btn,#btn{
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3b69e6;
+  color: #fff;
+  margin: 10px 10px auto auto;
+  float: right;
+}
+.btn:hover,#btn:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 @media (max-width: 768px) {
 

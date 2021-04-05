@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,6 +43,11 @@
       <input type="hidden" name="hobby" value="."/> 
   <table class="table">
     <h1>Student contributions</h1>
+    <div class="swapbtn">
+      <input type="submit" id="btn" value="Download"/>
+      <input type="button" class="btn" id = "allornone" name = "allornone" onclick='UnSelectAll()' value="Unselect All"/>
+    <input type="button" class="btn" id = "allornone" name = "allornone" onclick='selectAll()' value="Select All" />
+    </div>
     <th class="col1">Chose</th>
     <th>Name</th>
     <th>Email</th>
@@ -81,9 +85,7 @@
         </tr>
       {{/each}}
     </table>
-    <input type="button" class="btn" id = "allornone" name = "allornone" onclick='selectAll()' value="Select All"/><br>
-    <input type="button" class="btn" id = "allornone" name = "allornone" onclick='UnSelectAll()' value="Unselect All"/><br>
-    <input type="submit" id="btn" value="Download"/>
+    
     </form>
 
     {{!-- <form>
@@ -197,24 +199,3 @@ function selectAll(){
 </body>
 </html>
 
-
-
-
-
-{{!-- $(document).ready(function() {
-    $('input[type="button"]').click(function() {
-        var index = $(this).attr('name').substr(3);
-        index--;
-        $('table tr').each(function() { 
-            $('td:eq(' + index + ')',this).toggle();
-        });
-        $('th.' + $(this).attr('name')).toggle();
-
-        $('input[type="submit"]').toggle();
-        
-        $('input[type="button"]'+ $(this).attr('allornone')).toggle();
-
-
-
-    });
-}); --}}

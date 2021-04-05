@@ -398,7 +398,6 @@ fileRouter.post('/abc',(req,res)=>{
     var output = file_system.createWriteStream('public/nameslug.zip');
     var archive = archiver('zip');
     var a = req.body.hobby
-    console.log("xxxxxxxxx",a)
     output.on('close', function () {
     });
     archive.on('error', function(err){
